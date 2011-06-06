@@ -1,0 +1,91 @@
+; Lines starting with semicolon are ignored, so are empty ones.
+; Settings are "key = value", spaces at the beginning/end or around the equal
+; sign are ignored.
+
+; list of whateveryoulike from http://www.reddit.com/r/whateveryoulike urls
+; use comma or space as list seperator, looks like the case doesn't matter
+; required
+reddits = earthporn
+
+
+; folder where to store the files
+; defaults to "data"
+;target = pics
+
+
+;-------------------------------------------------------------------- filter ---
+; look at the top # links
+; defaults to 100
+;count = 500
+
+
+; has to have at least # comments
+; not used if not set
+;num_comments = 5
+
+
+; has to have a score greater than #
+; not used if not set
+;score = 100
+
+
+; has to have a upvotes greater than #
+; not used if not set
+;ups = 100
+
+
+; image width has to be greater than # -OR-
+;                       within #..#
+; not used if not set
+;width = 670..3100
+
+
+; image height has to be greater than # -OR-
+;                        within #..#
+; not used if not set
+;height = 1000..2100
+
+
+; image ratio has to be within #..#
+;
+; This is a very useful filter, since it is the best way to remove panoramas or
+; images that would leave move of the screen black.
+; For example a portrait postcard is 2:3, in landscape its 3:2, your old
+; bedroom TV is probably 4:3 and the one in the living room 16:9.
+; So I think everything between a portait postcard and a 16:9 image should be
+; fine.
+;
+; not used if not set
+ratio = 2:3..16:9
+
+
+; image pixel count has to be greater than # -OR-
+;                             within #..#
+;
+; This is something like a megapixel filter, its and alternative to width,
+; height and ratio.
+;
+; not used if not set
+;pixel = 700000..6200000
+
+
+; ignore files larger than # kilobytes
+; not used if not set
+; not implemented, contact me if you need it
+;filesize = 5000
+
+
+;------------------------------------------------------------------- cleanup ---
+; maximum disk usage in megabyte
+; not used if not set
+;maxdisk = 100
+
+
+; maximum age of image in days
+; not used if not set
+;maxage = 10
+
+
+; maximum file count
+; not used if not set
+;maxfiles = 100
