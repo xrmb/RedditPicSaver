@@ -1,0 +1,71 @@
+RedditPicSaver
+
+Purpose:
+  Small script to download images from your favorite reddit image section.
+  
+  
+Installation / Setup:
+  1. Get Perl and required modules installed on your system
+      Windows:
+        - download and install ActivePerl from activestate.com
+        - open the command line and install additional modules required:
+            ppm install JSON
+            ppm install Image::Size
+      
+      OSX / Linux:
+        - I dont have a Mac/Linux system, but assume it has a good perl version
+          installed already
+        - modules should be available via CPAN, so this should do it:
+             perl -MCPAN -e 'install JSON'
+             perl -MCPAN -e 'install Image::Size'
+             
+  2. get rds.pl and config.sample
+  3. make a copy of config.sample to config
+  4. edit config file, just read through the available settings and turn on
+     what turns you on
+
+
+Scheduling:
+  If you don't want to run the script manually you can schedule it. I'm pretty
+  sure the Windows task schedule or unix cron will work. Just make sure that
+  the script is executed in the folder it is installed, so it can find the
+  config file.
+
+
+Known issues:
+  - Some flickr links are not scanned successfully (un-flickr error). Its just
+    a zoo of links that flickr offers, if there are some that cause a high
+    amount of errors it could looked into.
+  - Only flickr html wrapper are parsed, see TODO section.
+  - Only jpeg images are kept.
+  - Devianart uses some #anchor magic in the link, and then probably javascript
+    to show the image, I'm not going into that.
+
+
+TODO:
+  If really someone uses this, and need this contact me.
+  
+  Reddit username support:
+    It should be possible to add username/password support, so a more
+    personalized list of images is parsed. This way support new filters like
+    "upvoted", "downvoted" and "hidden".
+    
+  Resize:
+    Instead of throwing large images away they could be resized to a desired
+    size, guess ImageMagick module could do that for us.
+    
+  Other sites:
+    Imgut should work perfectly, flickr most of the time. If there is another
+    website with html wrappers around that is frequently used it could be
+    supported.
+
+
+
+Contact:
+  I'm a family guy with a full time job and three kids, so I'm utilized from
+  6am to 9pm, but thanks to crappy TV I've to waste...
+
+
+History:
+  1.0 / 2011-06-05:
+    - initial version
