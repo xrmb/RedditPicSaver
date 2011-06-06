@@ -34,6 +34,25 @@ Scheduling:
   config file.
 
 
+Make it a Screensaver:
+  Windows XP:
+    - Wallpaper Changer from http://www.wallpaperchanger.de/
+    - (let me know if you need something better)
+
+  Windows Vista:
+    - dont have it, maybe like Win7?
+
+  Windows 7:
+    - Select the "Photos" screensaver and point to the target folder where the
+      pictures are downloaded to.
+
+  MacOS:
+    - something build in? extra software? (let me know and I'll update it)
+
+  Linux:
+    - something build in? extra software? (let me know and I'll update it)
+
+
 Known issues:
   - Some flickr links are not scanned successfully (un-flickr error). Its just
     a zoo of links that flickr offers, if there are some that cause a high
